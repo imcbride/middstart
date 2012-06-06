@@ -1,0 +1,50 @@
+MiddSTART is a WordPress theme used by Middlebury College to link donations to projects with their donors.
+
+=== Plugins ===
+
+The theme assumes that several plugins are installed.
+
+Category Order: http://wpguy.com/plugins/category-order
+Because the navigation is category based, you may wish to install this plugin to let you reorder the categories. You could also rework the theme to use a WordPress 3.0 navigation menu that includes links to categories.
+
+Co-Authors Plus: http://wordpress.org/extend/plugins/co-authors-plus/
+Allows multiple authors to be assigned to a post. Useful if you want to grant Author-level access to edit a specific project to multiple students working on the project, but do not want them editing other project posts.
+
+More Fields: http://more-plugins.se/plugins/more-fields/
+MiddSTART was created before WordPress have good support for custom post variables. This plugin adds interfaces for working with these custom fields. The theme assumes the creation of the fields outlined in the custom fields section lower in this document.
+
+ShareThis: http://sharethis.com/
+The theme makes reference to the ShareThis buttons in project.php. You could remove those lines if you do not wish to use this plugin.
+
+=== More Fields ===
+
+Create a new 'box' using the More Fields plugin and assign the following custom fields.
+
+Field               Custom field key        Type
+------------------------------------------------
+Giving Form ID      middstart-formid        Text
+Box Color           middstart-color         Select
+Total Needed        middstart-total         Text
+Participation Goal  middstart-participation Number
+Deadline            middstart-deadline      Text
+Blog URL            middstart-blog          Text
+Credits             middstart-credits       Text
+People              middstart-people        Wysiwyg
+Related Links       middstart-links         Wysiwyg
+Downloads           middstart-downloads     Wysiwyg
+Image or Video      middstart-media         Wysiwyg
+Open Graph Type     middstart-ogtype        Select
+
+middstart-formid: Each project needs to have a separate donations form which should include an ID in its URL. This ID should be passed to the payment vendor so that it shows up in transaction reports and can be used to idenify donations to specific projects. For Middlebury's payments through CyberSource, coming from forms in the Harris Connect online community, this is the MerchantReferenceNumber.
+
+middstart-color: Allows you to override the color used for the project box on the homepage. The select options should be a set of numerically ordered, comma separated hex codes. For example, these options would include the list of colors Middlebury uses. 01. e86c1f,02. 006633,03. af9400,04. 669966,05. 5b0086,06. 660033,07. 04424b,08. 333366,09. 993333,10. 993300,11. 184780,12. 669933,13. 663333,14. 0a6c4f,15. 78a12e,16. 00919e
+
+middstart-total: The funding goal for the project, in dollars.
+
+middstart-participation: The participation goal for the project, in number of donors.
+
+middstart-deadline: A date after which you do not expect to collect donations. This should be entered in some format that strtotime() can figure out.
+
+middstart-blog, middstart-credits, middstart-people, middstart-links, middstart-downloads, middstart-media: These are all fields to enter information about the project that will appear in different locations on the post theme template. See project.php for where each will appear in the theme.
+
+middstart-ogtype: The Facebook Open Graph type for the project post. Valid options include activity,sport,bar,company,cafe,hotel,restaurant,cause,sports_league,sports_team,band,government,non_profit,school,university,actor,athlete,author,director,musician,politician,public_figure,city,country,landmark,state_province,album,book,drink,food,game,movie,product,song,tv_show

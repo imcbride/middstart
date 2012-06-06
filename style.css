@@ -1,0 +1,230 @@
+/*
+Theme Name: MiddSTART
+Theme URI: http://middstart.middlebury.edu/
+Description: A theme for MiddSTART
+Author: MiddSTART
+Author URI: http://middstart.middlebury.edu
+
+The name 'MiddSTART', design and images used in this theme are copyright The President and Fellows of Middlebury College, all rights reserved. The functional code for this theme is licensed under the included copy of the GNU Public License.
+*/
+/* middstart styles */
+/* Expands upon and overrides middlebury.css */
+
+b { color:#fff; }
+a { color:yellow; }
+
+#wordmark { margin-bottom: 0px; padding-bottom: 0px; }
+
+.middstart h1,.middstart #header { margin:0 auto; font-size:2.2em; color:#fff; margin:0; }
+.middstart h1#tagline { height:67px; width:960px; font-size:1.25em; }
+.middstart h1#tagline a { width:960px; height:67px; padding-left:258px; position:absolute; top:21px; color:#fff; }
+.middstart h1#tagline a:hover { color:#fff; }
+.middstart #header { border:none; }
+	.middstart h1 a,.middstart #header a { border:none; text-decoration:none; background-color:transparent; padding:0; }
+.middstart h2 { color:#333; font-weight:bold; }
+.middstart h2.homepage_title { color:#83b2f9; clear:both; }
+.middstart h3,.middstart h4,.middstart h5 { color:#999; }
+
+  #labnav { width:100%; text-align:center; font-size:1.6em; font-weight:bold; margin-top:20px; }
+  #labnav li { float:left; margin:0; padding:6px 0; border-bottom:2px solid #fff; }
+  #labnav li.open a { color:#F8D612; }
+
+.middstart #left { padding:21px 36px 18px 0 !important; }
+.middstart #left ul { list-style-type: none; }
+.middstart #left a { color:#83b2f9; font-size:1.2em; text-decoration:none; border:0; }
+.middstart #left a:hover { color:#fff; text-decoration:underline; background-color: transparent; border:0; }
+	.middstart #left .menu { background-color:transparent; margin-top:0; }
+
+.middstart .menu { border:none; color:#83B2F9 !important; font-family: "Helvetica Neue",Arial,Helvetica,sans-serif !important; }
+div.content > ul.menu > li > ul.menu > li > a { font-weight:normal; }
+div.content > ul.menu > li > ul.menu > li { padding-left:0; }
+div.content > ul.menu > li { border:none; }
+.middstart .menu b { color:#fff; }
+.middstart .menu .menu { border-top:1px solid #11305b; background-color:#051932; }
+	.middstart .menu .menu li { border-bottom:1px solid #11305b !important; font-size:0.95em; padding-bottom:0.3em; }
+.middstart #content { background-image:none; }
+
+.middstart #page { background-color:transparent; border-top:none; color:#fff; }
+	.middstart #page p { line-height: 1.6em; width:600px; }
+	.middstart #page #intro { font-size:1.8em; line-height:1.8em; font-weight:bold; }
+	.middstart #page a { color:#83b2f9; text-decoration:underline; border:none; }
+	.middstart #page a:hover { background-color:transparent; text-decoration:underline; color:#eef; }
+
+
+	.pointer_right h3 { background-color:#1158A0; color:#fff !important; font-size:1.2em;padding:6px 12px; float:left; margin:0; font-family:Garamond,"Times New Roman",serif; text-align:center; }
+	.pointer_right .arrow { height:34px; width:32px; float:left; background:url(images/arrow_right.png) left center no-repeat; }
+	.pointer_right .box { border:none; padding:7px 0; margin-left:8px; float:left; color:#999; }
+		.pointer_right .box a.more { font-weight:bold; text-decoration:none !important; color:#f8d612 !important; }
+
+.middstart div.panel { padding:18px; margin-top:18px; background-color:#fff; color:#222; }
+.middstart div.panel.archive { background:none; padding-top:0; }
+	.middstart div.panel a { border:none; text-decoration:none; background-color:transparent; color:#223f65; font-weight:bold; }
+	.middstart div.panel_title { position:relative; }
+		.middstart div.panel_title h1 { color:#223f65; border:none; width:680px; }
+		.middstart div.panel_title h2,.middstart div.panel_title h4 { margin:0; }
+		.middstart div.panel_title h2 { margin-right:200px; font-size:2.5em; }
+		.middstart div.panel_title h2 a { text-decoration:none; padding:0; }
+		.middstart div.panel_title h2 a:hover { text-decoration:underline; }
+.middstart div.archive div.panel_title h2, div.categories h2 a { color:#83b2f9; }
+		.middstart div.share_this { position:absolute; top:0.8em; right:0.6em; text-align:right; }
+			.middstar div.share_this a { font-weight:normal; color:#666; }
+			
+	.middstart div.description { margin:0; background-color:#fff; padding:0; }
+		.middstart  table,.middstart tr,.middstart  td,.middstart tbody { border:none; padding:0;  }
+		.middstart div.panel table { margin-right:-18px; }
+		.middstart div.description td { width:290px; }
+		.middstart div.description td a { overflow:hidden; overflow:ellipsis; -o-text-overflow:ellipsis; }
+		.middstart div.description td.overview { padding-top:30px !important; color:#333; }
+			.middstart div.description td.overview ul { list-style-type:disc; margin:0 0 1em 1.5em; }
+			.middstart div.description td.overview a { color:#1f67c1; }
+			.middstart div.description td.overview a:hover { color:#666; }
+				.middstart div.description h3.progress { background-color:#8B867F; border:none; margin-bottom:0px; font-size:1.1em; }
+				.middstart div.description div.progress { border:4px solid #8B867F; overflow:hidden; padding:1px; }
+					.middstart div.description .progress_complete { color:#000; font-weight:bold; font-size:1.1em; line-height:26px; background-color:#a21806; }
+						.middstart div.description .progress_complete span { display:block; overflow:visible; padding:0 0.5em; background:url(images/progress_arrow.gif) right top no-repeat;}
+					.middstart div.description td.overview ul.stats { list-style-type:none; margin:18px 0 0 0; border-top:1px solid #999; }
+						.middstart div.description td.overview ul.stats li { border-bottom:1px solid #999; line-height:34px; margin:0; padding:1px 0; }
+						.middstart div.description td.overview ul.stats a { color:#223f65; }
+						.middstart div.description .stats .contributions,.middstart div.description .stats .remaining,.middstart div.description .stats .fund { display:block; padding-left:42px; background:#e3e3e3 url(images/hand.png) left center no-repeat; color:#666; }
+						.middstart div.description .stats .remaining { background-image:url(images/clock.png); }
+						.middstart div.description .stats .fund { background-image:url(images/arrow.png); background-color:#1f67c1; color:#fff !important; text-decoration:none; font-size:1.2em; }
+						.middstart div.description .stats .fund:hover { background-color:#666; }
+						
+		.middstart div.description h3 { font-size:0.89em; font-weight:bold; color:#fff; padding:3px 6px; border:1px solid #c0bab0; background-color:#8b867f; margin-top:30px; }
+		.middstart div.description ul { list-style-type:none; margin:0; }
+		.middstart div.description a { color:#223f65; font-weight:bold; text-decoration:underline; border:none; }
+		.middstart div.description b { color:#223f65; }
+		.middstart div.description a:hover { color:#1f67c1; }
+		.middstart div.description .people { font-size:0.9em; font-weight:bold; color:#999; margin-bottom:1em; }
+			.middstart div.description .people li { margin:0.2em 0; }
+				.middstart div.description .people li a { text-decoration:none; }
+				.middstart div.description .people .name { font-weight:bold; }
+				.middstart div.description .people .area { font-size:0.9em; color:#999; font-weight:bold; }
+		.middstart div.description .details { font-size:1.2em; }
+			.middstart div.description .details a { text-decoration:none; }
+		.middstart div.description .related { list-style-type:disc; color:#999; }
+		.middstart div.description .downloads {  }
+		.middstart div.description .downloads li.pdf { padding-left:28px; height:30px; padding-top:1px; background:url(images/pdf.png) left top no-repeat; }
+	.middstart #connections { background-color:#e3e3e3; padding:10px 0; }
+		.middstart #connections td { padding:10px 12px; border-left:1px solid #bbb; width:360px; }
+		.middstart #connections td#connections_header { border-left:none; width:126px; vertical-align:middle; }
+			.middstart #connections h2 { color:#666; font-size:1em; }
+			.middstart #connections #project_themes { font-weight:bold; }
+				.middstart #connections #project_themes ul { margin:0 0 0 1.5em; color:#999; }
+					.middstart #connections #project_themes li { margin:0; padding:0; }
+						.middstart #connections #project_themes a { border:none; text-decoration:none; color:#333; }
+						.middstart #connections #project_themes a:hover { background-color:transparent; color:#666; }
+			.middstart #connections #project_tags .tags { color:#666; }
+				.middstart #connections #project_tags .tags a { font-weight:bold; background-color:transparent; padding:0; margin:0; color:#666; border:none; cursor:pointer; }
+				.middstart #connections #project_tags .tags a:hover { color:#333; }
+				
+/* Teasers */
+/*  width is variable and can be changed to suit particular contexts */
+.middstart_teaser { width:400px; margin:10px 20px; }
+
+/* height can be varied, but should be at least 200px for intended design effect */
+.middstart_teaser { height:200px; }
+
+/* other styles are part of the design and shouldn't be varied */
+.middstart_teaser { padding:18px; position:relative; float:left; color:#000; }
+.middstart_teaser a { border:none; text-decoration:none; font-weight:bold;}
+.middstart_teaser h4 { color:#000; font-size:0.91em; font-weight:bold; line-height:1.1em; margin-top:8px; }
+.middstart_teaser h4 b { color:#fff; font-size:1.25em; }
+.middstart_teaser img { float:right; vertical-align:right; padding-left:15px; border:0; }
+.middstart_teaser_headline { padding-bottom:10px; }
+.middstart_teaser_headline a {padding:0; color:#fff; font-size:1.5em; line-height:1em; }
+.middstart_teaser_headline a:hover {color:#f8d612; background-color:transparent;}
+.middstart_teaser_label { position:absolute; bottom:20px;}
+.middstart_teaser_label a { display:block; color:#000; font-size:1.0em; padding:3px 5px; background-color:#f8d612;}
+.middstart_teaser_label a:hover {background-color:#fff;}
+.middstart_teaser .middstart_arrow { position:absolute; top:36px; right:202px; width:16px; height:43px; background:url(images/arrow_color1.png) no-repeat left center; }
+
+/* 14 possible colors for middSTART teaser */
+.middstart_teaser.color01, .cube.c1 {background-color: #e86c1f; }
+	.color01 .middstart_arrow { background-image:url(images/arrow_color1.png); }
+.middstart_teaser.color02, .cube.c2 {background-color: #006633; color:#ccc; }
+	.color02 .middstart_arrow { background-image:url(images/arrow_color2.png); }
+.middstart_teaser.color03, .cube.c3 {background-color: #af9400;}
+	.color03 .middstart_arrow { background-image:url(images/arrow_color3.png); }
+.middstart_teaser.color04, .cube.c4 {background-color: #669966;}
+	.color04 .middstart_arrow { background-image:url(images/arrow_color4.png); }
+.middstart_teaser.color05, .cube.c5 {background-color: #5b0086; color:#ccc; }
+	.color05 .middstart_arrow { background-image:url(images/arrow_color5.png); }
+.middstart_teaser.color06, .cube.c6 {background-color: #660033; color:#ccc; }
+	.color06 .middstart_arrow { background-image:url(images/arrow_color6.png); }
+.middstart_teaser.color07, .cube.c7 {background-color: #04424b; color:#ccc; }
+	.color07 .middstart_arrow { background-image:url(images/arrow_color7.png); }
+.middstart_teaser.color08, .cube.c8 {background-color: #333366; color:#ccc; }
+	.color08 .middstart_arrow { background-image:url(images/arrow_color8.png); }
+.middstart_teaser.color09, .cube.c9 {background-color: #993333;}
+	.color09 .middstart_arrow { background-image:url(images/arrow_color9.png); }
+.middstart_teaser.color10, .cube.c10 {background-color: #993300; color:#ccc; }
+	.color10 .middstart_arrow { background-image:url(images/arrow_color10.png); }
+.middstart_teaser.color11, .cube.c11 {background-color: #184780; color:#ccc; }
+	.color11 .middstart_arrow { background-image:url(images/arrow_color11.png); }
+.middstart_teaser.color12, .cube.c12 {background-color: #669933;}
+	.color12 .middstart_arrow { background-image:url(images/arrow_color12.png); }
+.middstart_teaser.color13, .cube.c13 {background-color: #663333; color:#ccc; }
+	.color13 .middstart_arrow { background-image:url(images/arrow_color13.png); }
+.middstart_teaser.color14, .cube.c14 {background-color:#0a6c4f;}
+	.color14 .middstart_arrow { background-image:url(images/arrow_color14.png); }
+.middstart_teaser.color15, .cube.c15 {background-color:#78a12e;}
+  .color15 .middstart_arrow { background-image:url(images/arrow_color15.png); }
+.middstart_teaser.color16, .cube.c16 {background-color:#00919e;}
+  .color16 .middstart_arrow { background-image:url(images/arrow_color16.png); }
+				
+a[href$='.pdf'] {
+display:inline-block;
+padding-left:30px;
+line-height:30px;
+background:transparent url(images/pdf.png) center left no-repeat;
+}
+
+.break { background: #071427; height: 10px; }
+.commentlist { width:900px; }
+h3#comments, div#respond { margin-top:30px; }
+.comments_feed { float:right; position:absolute; top:0.5em; right:2.6em; }
+
+table { width: 100%; }
+td { background-color: #1b2836; vertical-align: top; padding:10px !important; }
+td:hover { background-color: #1b2836; }
+
+table.author td { width: 50%; color: #fff; }
+
+table.cubes td { padding:15px !important; font-size:1.55em; line-height:1em; }
+table.cubes td a { color:#fff !important; }
+
+.projects .cube { width: 225px; height: 225px; }
+.themes .cube { width: 225px; height: 125px; }
+.authors .cube { width: 225px; }
+.donors .cube { width: 225px; height: 125px; text-align:center; }
+.donors .cube .wrapper { padding-top: 45px; }
+.cube { color: #fff; }
+.cube .projects a:hover { text-decoration:underline; }
+
+.cube .wrapper { position:relative; height:100%; color:#fff }
+.cube .department { position:absolute; bottom:0; left: 0; }
+.cube .department a { color:#000 !important; font-size:.8em; padding:2px 5px; background-color:#f8d612; }
+.cube ul.projects { font-size: .5em; }
+
+.departments td { background: transparent; color: #63AAEC; }
+.departments td a { font-weight: normal; border: 0; }
+.departments td a.has_projects { color: #63AAEC; font-weight:bold; }
+.departments td a:hover { background-color:#fff; }
+
+#syndication { text-align: right; margin-bottom: 10px; }
+#body_bottom { margin-bottom: 10px; }
+#body_bottom a.feed, .comments_feed a.feed{
+	padding: 5px 10px 0 23px;
+	background: url(images/feed.png) no-repeat 0 1px;
+}
+
+.categories ul { list-style-type:none; text-align:center; }
+.categories ul li { display:inline; padding:10px; }
+.categories ul li a { border:none; color:#83B2F9; font-weight:bold; font-size:1.6em; }
+.categories ul li a:hover { background:transparent; }
+
+.see_more { margin-left:18px; }
+.see_more a { border:none; }
+
+hr { height:10px; background:#8B867F; border:none; }
